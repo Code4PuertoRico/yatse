@@ -1,7 +1,7 @@
 {
-  "name": "telegram-gate",
+  "name": "yatse",
   "version": "1.0.0",
-  "description": "Las 889 páginas de Telegram entre Rosselló Nevares y sus allegados",
+  "description": "Yet Another Text Search Engine powered by Lunr.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -9,7 +9,8 @@
     "build-export": "next build && next export",
     "create-indexes": "node ./scripts/creater-lunr-index.js"
   },
-  "author": "José Padilla <hello@jpadilla.com>",
+  "author": "Froilan Irizarry <hello@froilanirizarry.me>",
+  "original_project": "https://github.com/jpadilla/telegram-gate",
   "license": "MIT",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
