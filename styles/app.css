@@ -1,0 +1,35 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #718096;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right:8px solid #718096;
+}
+
+.page-container {
+  display: block;
+  max-width: 672px;
+  max-height: 881px;
+  min-width: 359px;
+  min-height: 460px;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    min-height: 652px;
+  }
+}
