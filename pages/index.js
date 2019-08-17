@@ -1,5 +1,6 @@
 import Header from '../components/header';
 import Page from '../components/page';
+import config from '../config.js/index.js';
 import data from '../static/data.json';
 import lunrIndex from '../static/index.json';
 import unidecode from 'unidecode';
@@ -28,7 +29,7 @@ function Home(props) {
           <Page
             key={result.image}
             text={result.text}
-            image={result.image}
+            image={`${config.imageLocation}${result.image}`}
             number={result.page}
             query={props.query}
           />
