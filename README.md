@@ -9,6 +9,7 @@ Yet Another Test Search Engine is a template repository to help create static si
 1. It's built using [Next.js](https://nextjs.org/), which is a [React.js](https://reactjs.org) framework.
 2. It uses [Tailwind.css](https://tailwindcss.com/), which is a CSS framework.
 3. Its search is powered by [Lunr.js](https://lunrjs.com/), this is a search engine similar in functionality to Solr but in the browser.
+4. There's a [config.js](config.js). Please use this for global configurations, such as where you are storing your images.
 
 ## Adding your text data
 
@@ -31,6 +32,20 @@ Place you text data in the `static` folder. This file should be in a JSON format
 3. __image:__ If you are extrapolating the text from an image you can use this to serve the image.
 
 For an example you can take a look at: [https://github.com/jpadilla/telegram-gate/blob/master/static/chat.json](https://github.com/jpadilla/telegram-gate/blob/master/static/chat.json)
+
+### So where are the images
+
+Anywhere you want!
+
+The images location URL/URI can be configured in the [config.js](config.js) file in the root of this project. Just remember that this is just the base of the location. The actual name of the file should be included in the [data.json](./static/data.json) file.
+
+Ex. [config.js](config.js)
+
+```javascript
+modules.export = {
+    imageLocation: "https://d355efj0j563i.cloudfront.net/images/"
+}
+```
 
 ## How to use this template
 
