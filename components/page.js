@@ -15,7 +15,12 @@ function Page(props) {
       <Link href={linkHref} as={linkAs}>
         <a className="block">
           <LazyLoad debounce={false} offsetVertical={500}>
-            // Set your content here
+            <img
+              className="block max-w-full h-auto"
+              alt={props.text}
+              title={props.text}
+              src={props.image}
+            />
           </LazyLoad>
         </a>
       </Link>
