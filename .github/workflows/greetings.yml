@@ -1,0 +1,18 @@
+name: Greetings
+
+on: 
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hola! Hello! :wave: Thanks for taking an interest in this project and for submitting your first issue. We will be taking a look at it soon. ::'' first issue'
+        pr-message: 'Hola! Hello! :wave: Thanks for taking an interest in this project and for submitting your first PR. We will be taking a look at it soon.'' first pr'
