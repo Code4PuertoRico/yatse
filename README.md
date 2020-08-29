@@ -1,6 +1,6 @@
 # YATSE
 
-Yet Another Test Search Engine is a template repository to help create static sites with Lunr.js search.
+Yet Another Text Search Engine is a template repository to help create static sites with Lunr.js search.
 
 ## What you should know
 
